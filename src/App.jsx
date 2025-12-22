@@ -81,7 +81,7 @@ WeatherDetails.prototype = {
 }
 
 function App() {
-  const api_key = process.env.REACT_APP_WEATHER_API_KEY;
+  const api_key = import.meta.env.VITE_WEATHER_API_KEY;
 
   const [text, setText] = useState('Chennai');
 
